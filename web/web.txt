@@ -1,0 +1,38 @@
+Q1:
+Describe in your own words the difference between GET and POST HTTP methods.
+Provide case in which using one of these methods instead another would be a bug.
+Answer1:
+GET method has no body for sending data, POST method has body. Data in GET method is sent in the request URL with parameters.
+POST method sending data in his body, usually in JSON format.
+Case with bug - when authorizing, use the GET method send login and password pairs in the request url with parameters.
+It is not safe.
+
+Q2:
+What groups of HTTP status codes you know?
+Answer2:
+2xx - Success
+3xx - Redirect
+4xx - Cleint error
+5xx - Server error
+
+Q3:
+What are cookies used for? What alternatives to cookies you know?
+Answer3:
+Cookie is a file that is stored in the user's browser and contains personal settings and authorization data.
+Cookies are used to quickly auto-fill data or for auto-login on sites. Alternatives for cookies is local storage and session storage.
+
+Q4:
+In which cases browser console can be helpful for QA engineer.
+Answer4:
+I always keep the browser console open. In the Elements tab, you can access the HTML of the page and its CSS styles.
+In the Console tab, you can see the error stack traces. In the Network tab, interact with all sent and received requests and responses,
+check their response codes and transmitted and received data. In the Application tab, have access to cookies and to local and session storage.
+
+Q5:
+Describe in your own words what a client-server architecture is. Give an example of any working scheme of client-server interaction.
+Answer5:
+Client-server architecture is a form of application implementation in which there are a Client, a Server, a Database and an API.
+Communication between a Client and a Server takes place using an API.
+The Client is the one who sends requests to the server, it can be either a website or a mobile application, or a smart kettle or a scooter.
+The Client sends requests via the API to the Server, the Server processes the request using data from the Database and returns
+the response back via the API.
